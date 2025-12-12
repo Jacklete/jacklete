@@ -1,72 +1,98 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8" />
-  <title>Jacklete</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="logo-area">
-      <h1>Jacklete</h1>
-      <p>Een realistische kijk op training en het lichaam</p>
+  <nav class="main-nav" aria-label="Hoofd navigatie">
+    <a class="nav-link" href="#hero">Start</a>
+    <a class="nav-link" href="#featured">Blogs</a>
+    <a class="nav-link" href="#topics">Topics</a>
+  </nav>
+</div>
+      <form class="subscribe-form" action="#" method="post" aria-label="Inschrijven nieuwsbrief">
+        <label for="email" class="visually-hidden">E-mailadres</label>
+        <input id="email" name="email" type="email" placeholder="Je e‑mail" required class="input input--email" />
+        <button type="submit" class="btn btn--primary btn--red">Aanmelden</button>
+      </form>
     </div>
-    <nav class="main-nav">
-      <a href="#intro">Start</a>
-      <a href="#philosophy">Visie</a>
-      <a href="#training">Training</a>
-    </nav>
-  </header>
 
-  <main>
-    <section id="intro" class="hero">
-      <h2>Geen extreme fitnesstips, maar verstandige keuzes</h2>
-      <p>
-        Jacklete is mijn leerproject over coderen en training tegelijk. 
-        Hier bouw ik stap voor stap een site over kracht, conditie en gezondheid 
-        zonder onnodige onzin.
-      </p>
-      <button id="helloButton">Volg mijn eerste stap</button>
-    </section>
+    <div class="hero-visual" aria-hidden="true">
+      <!-- eenvoudige visuele placeholder; vervang door echte afbeelding indien gewenst -->
+      <svg width="280" height="180" viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg" class="hero-illustration">
+        <rect width="280" height="180" rx="12" fill="#111119" />
+        <g fill="#e74c3c" opacity="0.85">
+          <rect x="36" y="100" width="28" height="48" rx="6" />
+          <rect x="76" y="70" width="28" height="78" rx="6" />
+          <rect x="116" y="40" width="28" height="108" rx="6" />
+          <rect x="156" y="60" width="28" height="88" rx="6" />
+          <rect x="196" y="120" width="28" height="28" rx="6" />
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
 
-    <section id="philosophy" class="section">
-      <h2>Mijn visie</h2>
-      <p>
-        De basis is simpel. Begrijpen hoe je lichaam werkt, 
-        kleine stappen die je volhoudt, en een training die past 
-        bij je leven in plaats van andersom.
-      </p>
-      <ul>
-        <li>Focus op techniek en progressie</li>
-        <li>Rust, slaap en herstel horen bij trainen</li>
-        <li>Geen magische schema's, wel duidelijke uitleg</li>
-      </ul>
-    </section>
+<section id="featured" class="featured">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Featured artikelen</h2>
+      <p class="section-sub">Recent populaire stukken en evergreen content</p>
+    </div>
 
-    <section id="training" class="section">
-      <h2>Wat je hier straks vindt</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Hybride atleet</h3>
-          <p>Combinatie van kracht, conditie en explosiviteit zonder jezelf op te branden.</p>
-        </article>
-        <article class="card">
-          <h3>Praktische schema's</h3>
-          <p>Voorbeelden van weken voor mensen met een druk leven en beperkte tijd.</p>
-        </article>
-        <article class="card">
-          <h3>Uitleg over het lichaam</h3>
-          <p>Korte, nuchtere stukken over spieren, energie en belastbaarheid.</p>
-        </article>
-      </div>
-    </section>
-  </main>
+    <div class="card-grid" role="list">
+      <article class="card" role="listitem">
+        <a class="card-link" href="/post-1-html">
+          <img class="card-image" src="cover-post-1.jpg" alt="Thumbnail: Hybride atleet" />
+          <div class="card-body">
+            <span class="card-meta">
+              <time datetime="2025-12-01">1 dec 2025</time>
+              <span class="meta-sep">•</span>
+              <span class="card-category">Training</span>
+            </span>
+            <h3 class="card-title">Hybride atleet: balans tussen kracht en conditie</h3>
+          </div>
+        </a>
+      </article>
 
-  <footer class="site-footer">
-    <p>Gemaakt door Harrie als leerproject. Contact: info@jacklete.nl</p>
-  </footer>
+      <article class="card" role="listitem">
+        <a class="card-link" href="/post-2.html">
+          <img class="card-image" src="cover-post-2.jpg" alt="Thumbnail: Praktische schema's" />
+          <div class="card-body">
+            <span class="card-meta">
+              <time datetime="2025-11-15">15 nov 2025</time>
+              <span class="meta-sep">•</span>
+              <span class="card-category">Schema</span>
+            </span>
+            <h3 class="card-title">Praktische weken: trainen met weinig tijd</h3>
+          </div>
+        </a>
+      </article>
 
-  <script src="script.js"></script>
-</body>
-</html>
+      <article class="card" role="listitem">
+        <a class="card-link" href="/post-3.html">
+          <img class="card-image" src="cover-post-3.jpg" alt="Thumbnail: Uitleg over het lichaam" />
+          <div class="card-body">
+            <span class="card-meta">
+              <time datetime="2025-10-20">20 okt 2025</time>
+              <span class="meta-sep">•</span>
+              <span class="card-category">Uitleg</span>
+            </span>
+            <h3 class="card-title">Hoe spieren echt werken: simpel en nuchter</h3>
+          </div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="topics" class="topics">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Topics</h2>
+      <p class="section-sub">Blader per onderwerp</p>
+    </div>
+
+    <aside class="topic-list" aria-label="Onderwerpen">
+      <a class="topic-btn" href="/topics/strength.html">Kracht</a>
+      <a class="topic-btn" href="/topics/cardio.html">Conditie</a>
+      <a class="topic-btn" href="/topics/recovery.html">Herstel</a>
+      <a class="topic-btn" href="/topics/nutrition.html">Voeding</a>
+      <a class="topic-btn" href="/topics/programming.html">Programmering</a>
+    </aside>
+  </div>
+</section>
