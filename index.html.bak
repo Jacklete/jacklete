@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jacklete</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-area">
+      <h1>Jacklete</h1>
+      <p>Een realistische kijk op training en het lichaam</p>
+    </div>
+    <nav class="main-nav">
+      <a href="#intro">Start</a>
+      <a href="#philosophy">Visie</a>
+      <a href="#training">Training</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro" class="hero">
+      <h2>Geen extreme fitnesstips, maar verstandige keuzes</h2>
+      <p>
+        Jacklete is mijn leerproject over trainen. 
+        Hier bouw ik stap voor stap een site over kracht, conditie en gezondheid 
+        zonder onnodige onzin.
+      </p>
+      <button id="helloButton">Volg mijn eerste stap</button>
+    </section>
+<!-- leg uit wat deze section doet -->
+    <section id="philosophy" class="section">
+      <h2>Mijn visie</h2>
+      <p>
+        De basis is simpel. Begrijpen hoe je lichaam werkt, 
+        kleine stappen die je volhoudt, en een training die past 
+        bij je leven in plaats van andersom.
+      </p>
+      <ul>
+        <li>Focus op techniek en progressie</li>
+        <li>Rust, slaap en herstel horen bij trainen</li>
+        <li>Geen magische schema's, wel duidelijke uitleg</li>
+      </ul>
+    </section>
+
+    <section id="training" class="section">
+      <h2>Wat je hier straks vindt</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Hybride atleet</h3>
+          <p>Combinatie van kracht, conditie en explosiviteit zonder jezelf op te branden.</p>
+        </article>
+        <article class="card">
+          <h3>Praktische schema's</h3>
+          <p>Voorbeelden van weken voor mensen met een druk leven en beperkte tijd.</p>
+        </article>
+        <article class="card">
+          <h3>Uitleg over het lichaam</h3>
+          <p>Korte, nuchtere stukken over spieren, energie en belastbaarheid.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Gemaakt door Harrie als leerproject. Contact: info@jacklete.nl</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
